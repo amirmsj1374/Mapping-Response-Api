@@ -1,0 +1,29 @@
+# Example Yaml Format
+Mapping:
+  readOnly: true
+  fields:
+    API:
+      type: string
+      column: api
+    Description:
+      type: string
+      column: description
+    Auth:
+      type: string
+      column: auth
+    HTTPs:
+      type: string
+      column: https
+    Cors:
+      type: string
+      column: cors
+    Link:
+      type: string
+      column: link
+    Category:
+      type: string
+      column: category
+
+  deletedFields:
+    count:
+      type: string
