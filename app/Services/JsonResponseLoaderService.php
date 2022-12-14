@@ -7,12 +7,15 @@ use GuzzleHttp\Psr7\Response;
 
 class JsonResponseLoaderService implements ResponseLoaderInterface
 {
-    public function getData(Response $response)
+    /**
+     * To get json data and return it as an array
+     */
+    public function getData(Response $response) :array
     {
         return $this->convertToArray($response);
     }
 
-    public function convertToArray(Response $response) :array
+    private function convertToArray(Response $response) :array
     {
         return json_decode($response->getBody()->getContents(), true);
     }

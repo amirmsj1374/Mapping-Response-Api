@@ -11,9 +11,4 @@ class XmlResponseLoaderService implements ResponseLoaderInterface
     {
         return 'XML loaded';
     }
-
-    public function convertToArray($response)
-    {
-        return 'XML loaded';
-    }
 }
